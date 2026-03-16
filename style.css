@@ -5,11 +5,28 @@ background:#f4f4f4;
 }
 
 .navbar{
-display:flex;
-justify-content:space-between;
-background:#003366;
-color:white;
-padding:15px;
+background-color: #0b8cad; /* color de fondo azul */
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar ul{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav a{
@@ -80,12 +97,41 @@ color:white;
     width: 60%;
 }
 
-#idea{
+#idea2{
     background-color: #6dd5ed;
     width: 10%;
+    display: none;
 }
 
 #nuevaIdea{
     background-color: #6dd5ed;
-    width: 10%;
+
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0b8cad; /* o el color que tenías */
+  padding: 120px 20px;
+  border-radius: 8px;
+  width: 180px; /* tamaño fijo o relativo */
+  box-sizing: border-box;
+  position: relative;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 100px); 
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .grid-item {
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+  }
